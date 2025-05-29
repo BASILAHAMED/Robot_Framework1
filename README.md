@@ -41,7 +41,7 @@ It uses **Robot Framework** with **SeleniumLibrary** to simulate user interactio
 1. **Clone the repo**
    ```bash
    git clone https://github.com/BASILAHAMED/Robot_Framework1.git
-   cd robot-signup-automation
+   cd Robot_Framework1
    ```
 
 2. **Install dependencies**
