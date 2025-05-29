@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-05-29T12:58:59.522965" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSignUp" source="D:\Automation\Robot-Demo\Day2\Robot-POM1\TestCases\TestSignUp.robot">
+<test id="s1-t1" name="TestCase-1: Open Signup Page" line="9">
+<kw name="Start SignUp Page" owner="SignUpPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:00.052045" level="INFO">Opening browser 'chrome' to base url 'https://qavbox.github.io/demo/signup/'.</msg>
+<arg>${SIGNUP_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-29T12:59:00.051579" elapsed="6.087900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.139812" elapsed="0.042431"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.182581" elapsed="0.001994"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:06.402349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/start_page.png"&gt;&lt;img src="../Screenshots/start_page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Screenshots/start_page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.184805" elapsed="0.217742"/>
+</kw>
+<doc>Open browser and navigate to SignUp page</doc>
+<status status="PASS" start="2025-05-29T12:59:00.050298" elapsed="6.352496"/>
+</kw>
+<status status="PASS" start="2025-05-29T12:59:00.048908" elapsed="6.354543"/>
+</test>
+<test id="s1-t2" name="TestCase-2: Fill Signup Form" line="12">
+<kw name="Fill SignUp Form" owner="SignUpPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:06.408283" level="INFO">Typing text 'Basil' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.407363" elapsed="0.290402"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:06.698626" level="INFO">Typing text 'basil@example.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.698067" elapsed="0.191203"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:06.889682" level="INFO">Typing text '987654123' into text field 'id=tel'.</msg>
+<arg>id=tel</arg>
+<arg>${TELEPHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:06.889448" elapsed="0.138913"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.028794" level="INFO">Selecting options from selection list 'name=sgender' by label Male.</msg>
+<arg>name=sgender</arg>
+<arg>${GENDER}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.028542" elapsed="0.214895"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.243934" level="INFO">Clicking element 'xpath=//input[@value='five']'.</msg>
+<arg>xpath=//input[@value='${EXPERIENCE}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.243637" elapsed="0.110061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.354302" level="INFO">Clicking element 'xpath=//input[@value='automationtesting']'.</msg>
+<arg>xpath=//input[@value='${SKILLS}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.353894" elapsed="0.097014"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.451412" level="INFO">Selecting options from selection list 'id=tools' by label Selenium.</msg>
+<arg>id=tools</arg>
+<arg>${AUTOMATION_TOOLS}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.451076" elapsed="0.106973"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.698143" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/filled_form.png"&gt;&lt;img src="../Screenshots/filled_form.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Screenshots/filled_form.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.558255" elapsed="0.140105"/>
+</kw>
+<doc>Fill the signup form with valid details</doc>
+<status status="PASS" start="2025-05-29T12:59:06.406792" elapsed="1.291786"/>
+</kw>
+<status status="PASS" start="2025-05-29T12:59:06.405524" elapsed="1.293642"/>
+</test>
+<test id="s1-t3" name="TestCase-3: Submit Form" line="15">
+<kw name="Submit Form" owner="SignUpPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.702709" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.702148" elapsed="0.141384"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:07.844063" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>Registration Done!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.843825" elapsed="0.007731"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-29T12:59:08.196087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/submitted_form.png"&gt;&lt;img src="../Screenshots/submitted_form.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Screenshots/submitted_form.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-29T12:59:07.851868" elapsed="0.344315"/>
+</kw>
+<doc>Submit the form and handle the confirmation alert</doc>
+<status status="PASS" start="2025-05-29T12:59:07.701297" elapsed="0.494984"/>
+</kw>
+<status status="PASS" start="2025-05-29T12:59:07.700243" elapsed="0.496405"/>
+</test>
+<test id="s1-t4" name="TestCase-4: Close Browser" line="18">
+<kw name="Shutdown" owner="SignUpPage">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-29T12:59:08.198524" elapsed="6.364230"/>
+</kw>
+<doc>Close the browser</doc>
+<status status="PASS" start="2025-05-29T12:59:08.198275" elapsed="6.364673"/>
+</kw>
+<status status="PASS" start="2025-05-29T12:59:08.197806" elapsed="6.365644"/>
+</test>
+<doc>Test Suite for Signup Page</doc>
+<status status="PASS" start="2025-05-29T12:58:59.524772" elapsed="15.040341"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TestSignUp">TestSignUp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
